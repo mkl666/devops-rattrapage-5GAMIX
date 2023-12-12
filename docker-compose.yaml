@@ -1,7 +1,6 @@
 version: "3.8"
 
 services:
-
     mysqldb:
       image: mysql:5.7
       restart: unless-stopped
@@ -15,7 +14,7 @@ services:
     eventsProject-backend:
       depends_on:
         - mysqldb
-      image: korma666/eventsProject:1.0.0
+      image: korma666/rattrapage:1.0.0
       restart: on-failure
       ports:
         - 8082:8082
